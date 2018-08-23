@@ -1,7 +1,7 @@
 <?php
 require_once "../library/database.php";
 
-$message = ""; // initial message 
+$message = "";
 if( isset($_POST['insert']) ){
 	$name = $_POST['name'];
 	$email = $_POST['email'];
@@ -9,9 +9,12 @@ if( isset($_POST['insert']) ){
 	$crud = new crud();
 	$result = $crud->students_insert($name, $email);
 
-	if($result){
+	if($result)
+	{
 		$message = "Data is inserted successfully.";
-	}else{
+	}
+	else
+	{
 		$message = "Sorry, Data is not inserted.";
 	}
 }
@@ -26,7 +29,7 @@ if( isset($_POST['insert']) ){
 <body>
 	<div class="wrapper">
 
-		<div><?php echo $message; ?></div>
+		<div class="w3-padding"><?php echo $message; ?></div>
 
 		<table width="100%" cellpadding="5" cellspacing="1" border="1">
 			<form action="insert.php" method="post" autocomplete="off">

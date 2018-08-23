@@ -28,7 +28,7 @@ else
 </head>
 <body>
 	<div class="wrapper">
-		<div><?php echo $message; ?></div>
+		<div class="w3-padding"><?php echo $message; ?></div>
 		<div><a class="w3-btn w3-blue" href="list.php">Back to List</a></div>
 	</div>
 </body>

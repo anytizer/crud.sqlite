@@ -13,7 +13,7 @@ $students = $crud->students_list();
 </head>
 <body>
 	<div class="wrapper">
-		<a class="w3-btn w3-blue" href="insert.php">Add New</a>
+		<div class="w3-padding"><a class="w3-btn w3-blue" href="insert.php">Add New</a></div>
 		<table class="w3-table w3-bordered">
 			<thead class="w3-black">
 				<tr>

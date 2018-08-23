@@ -10,7 +10,8 @@ if( isset($_POST['update']) )
 	$name = $_POST['name'];
 	$email = $_POST['email'];
 
-	if($crud->students_update($rid, $name, $email))
+	$result = $crud->students_update($rid, $name, $email);
+	if($result)
 	{
 		$message = "Data is updated successfully.";
 	}
@@ -35,7 +36,7 @@ $data = $crud->students_details($rid);
 <body>
 	<div class="wrapper">
 
-		<div><?php echo $message; ?></div>
+		<div class="w3-padding"><?php echo $message; ?></div>
 
 		<table width="100%" cellpadding="5" cellspacing="1" border="1">
 			<form action="?" method="post" autocomplete="off">
@@ -49,7 +50,7 @@ $data = $crud->students_details($rid);
 				<td><input name="email" type="text" value="<?php echo $data['email']; ?>"></td>
 			</tr>
 			<tr>
-				<td><a class="w3-btn w3-blue" href="list.php">Back</a></td>
+				<td><a class="w3-btn w3-blue" href="list.php">List Data</a></td>
 				<td><input class="w3-btn w3-blue" name="update" type="submit" value="Update Data"></td>
 			</tr>
 			</form>
