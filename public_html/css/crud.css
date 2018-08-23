@@ -1,0 +1,23 @@
+body
+{
+	background-color: skyblue;
+}
+
+.wrapper
+{
+	 width: 600px;
+	 margin: 20px auto;
+}
+
+/**
+thead
+{
+	background-color: #000000;
+	color: #FFFFFF;
+}
+*/
+
+tbody td
+{
+	min-height: 65px;
+}
