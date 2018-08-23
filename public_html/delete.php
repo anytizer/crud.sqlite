@@ -1,7 +1,6 @@
 <?php
 require_once "../library/database.php";
 
-# rowid from url
 $rid = 0;
 if(!empty($_GET["rid"]))
 {

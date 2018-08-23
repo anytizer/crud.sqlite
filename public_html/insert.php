@@ -3,7 +3,6 @@ require_once "../library/database.php";
 
 $message = ""; // initial message 
 if( isset($_POST['insert']) ){
-	// Gets the data from post
 	$name = $_POST['name'];
 	$email = $_POST['email'];
 

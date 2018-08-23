@@ -6,7 +6,6 @@ $crud = new crud();
 $message = "";
 if( isset($_POST['update']) )
 {
-	// Gets the data from post
 	$rid = $_POST['rid'];
 	$name = $_POST['name'];
 	$email = $_POST['email'];
@@ -21,7 +20,7 @@ if( isset($_POST['update']) )
 	}
 }
 
-$rid = $_REQUEST['rid']; // rowid from url
+$rid = $_REQUEST['rid'];
 
 $data = $crud->students_details($rid);
 ?>
