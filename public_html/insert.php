@@ -31,8 +31,8 @@ if( isset($_POST['insert']) ){
 
 		<div class="w3-padding"><?php echo $message; ?></div>
 
-		<table width="100%" cellpadding="5" cellspacing="1" border="1">
-			<form action="insert.php" method="post" autocomplete="off">
+		<table class="w3-table w3-bordered">
+			<form name="insert-data" action="insert.php" method="post" autocomplete="off">
 			<tr>
 				<td>Name:</td>
 				<td><input name="name" type="text" value=""></td>
@@ -48,5 +48,10 @@ if( isset($_POST['insert']) ){
 			</form>
 		</table>
 	</div>
+<script type="text/javascript">
+window.onload = function(){
+	document.forms["insert-data"].elements["name"].focus();
+};
+</script>
 </body>
 </html>

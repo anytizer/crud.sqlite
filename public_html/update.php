@@ -17,7 +17,7 @@ if( isset($_POST['update']) )
 	}
 	else
 	{
-		$message = "Sorry, Data is not updated.";
+		$message = "Sorry, data is not updated.";
 	}
 }
 
@@ -38,7 +38,7 @@ $data = $crud->students_details($rid);
 
 		<div class="w3-padding"><?php echo $message; ?></div>
 
-		<table width="100%" cellpadding="5" cellspacing="1" border="1">
+		<table class="w3-table w3-bordered">
 			<form action="?" method="post" autocomplete="off">
 			<input type="hidden" name="rid" value="<?php echo $data['rowid']; ?>">
 			<tr>
