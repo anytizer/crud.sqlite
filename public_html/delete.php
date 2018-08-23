@@ -27,9 +27,9 @@ else
 	<link rel="stylesheet" type="text/css" href="css/crud.css">
 </head>
 <body>
-	<div class="wrapper">
-		<div class="w3-padding"><?php echo $message; ?></div>
-		<div><a class="w3-btn w3-blue" href="list.php">Back to List</a></div>
-	</div>
+<div class="wrapper">
+	<div class="w3-padding"><?php echo $message; ?></div>
+	<div><a class="w3-btn w3-blue" href="list.php">Back to List</a></div>
+</div>
 </body>
 </html>

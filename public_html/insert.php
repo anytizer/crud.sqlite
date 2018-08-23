@@ -27,27 +27,27 @@ if( isset($_POST['insert']) ){
 	<link rel="stylesheet" type="text/css" href="css/crud.css">
 </head>
 <body>
-	<div class="wrapper">
+<div class="wrapper">
 
-		<div class="w3-padding"><?php echo $message; ?></div>
+	<div class="w3-padding"><?php echo $message; ?></div>
 
-		<table class="w3-table w3-bordered">
-			<form name="insert-data" action="insert.php" method="post" autocomplete="off">
-			<tr>
-				<td>Name:</td>
-				<td><input name="name" type="text" value=""></td>
-			</tr>
-			<tr>
-				<td>Email:</td>
-				<td><input name="email" type="text" value=""></td>
-			</tr>
-			<tr>
-				<td><a class="w3-btn w3-blue" href="list.php">See Data</a></td>
-				<td><input class="w3-btn w3-blue" name="insert" type="submit" value="Insert Data"></td>
-			</tr>
-			</form>
-		</table>
-	</div>
+	<table class="w3-table w3-bordered">
+		<form name="insert-data" action="insert.php" method="post" autocomplete="off">
+		<tr>
+			<td>Name:</td>
+			<td><input name="name" type="text" value=""></td>
+		</tr>
+		<tr>
+			<td>Email:</td>
+			<td><input name="email" type="text" value=""></td>
+		</tr>
+		<tr>
+			<td><a class="w3-btn w3-blue" href="list.php">See Data</a></td>
+			<td><input class="w3-btn w3-blue" name="insert" type="submit" value="Insert Data"></td>
+		</tr>
+		</form>
+	</table>
+</div>
 <script type="text/javascript">
 window.onload = function(){
 	document.forms["insert-data"].elements["name"].focus();
