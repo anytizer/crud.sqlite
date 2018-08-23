@@ -26,18 +26,17 @@ if( isset($_POST['insert']) ){
 <body>
 	<div class="wrapper">
 
-		<!-- showing the message here-->
-		<div><?php echo $message;?></div>
+		<div><?php echo $message; ?></div>
 
 		<table width="100%" cellpadding="5" cellspacing="1" border="1">
-			<form action="insert.php" method="post" autocomplete="on">
+			<form action="insert.php" method="post" autocomplete="off">
 			<tr>
 				<td>Name:</td>
-				<td><input name="name" type="text"></td>
+				<td><input name="name" type="text" value=""></td>
 			</tr>
 			<tr>
 				<td>Email:</td>
-				<td><input name="email" type="text"></td>
+				<td><input name="email" type="text" value=""></td>
 			</tr>
 			<tr>
 				<td><a class="w3-btn w3-blue" href="list.php">See Data</a></td>

@@ -28,8 +28,8 @@ $students = $crud->students_list();
 					<td><?php echo $student['name']; ?></td>
 					<td><?php echo $student['email']; ?></td>
 					<td>
-						<a class="w3-btn w3-blue" href="update.php?rid=<?php echo $student['rowid'];?>">Edit</a> 
-						<a class="w3-btn w3-red"  href="delete.php?rid=<?php echo $student['rowid'];?>" onclick="return confirm('Are you sure?');">Delete</a>
+						<a class="w3-btn w3-blue" href="update.php?rid=<?php echo $student['rowid']; ?>">Edit</a> 
+						<a class="w3-btn w3-red"  href="delete.php?rid=<?php echo $student['rowid']; ?>" onclick="return confirm('Are you sure?');">Delete</a>
 					</td>
 				</tr>
 				<?php } ?>

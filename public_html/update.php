@@ -35,19 +35,18 @@ $data = $crud->students_details($rid);
 <body>
 	<div class="wrapper">
 
-		<!-- showing the message here-->
-		<div><?php echo $message;?></div>
+		<div><?php echo $message; ?></div>
 
 		<table width="100%" cellpadding="5" cellspacing="1" border="1">
-			<form action="?" method="post" autocomplete="on">
-			<input type="hidden" name="rid" value="<?php echo $data['rowid'];?>">
+			<form action="?" method="post" autocomplete="off">
+			<input type="hidden" name="rid" value="<?php echo $data['rowid']; ?>">
 			<tr>
 				<td>Name:</td>
-				<td><input name="name" type="text" value="<?php echo $data['name'];?>"></td>
+				<td><input name="name" type="text" value="<?php echo $data['name']; ?>"></td>
 			</tr>
 			<tr>
 				<td>Email:</td>
-				<td><input name="email" type="text" value="<?php echo $data['email'];?>"></td>
+				<td><input name="email" type="text" value="<?php echo $data['email']; ?>"></td>
 			</tr>
 			<tr>
 				<td><a class="w3-btn w3-blue" href="list.php">Back</a></td>
