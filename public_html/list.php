@@ -29,32 +29,13 @@ $records = $crud->students_list();
 				<td><?php echo $record['email']; ?></td>
 				<td>
 					<a class="w3-btn w3-blue" href="update.php?rid=<?php echo $record['rowid']; ?>">Edit</a> 
-					<a class="w3-btn w3-red"  href="delete.php?rid=<?php echo $record['rowid']; ?>">Delete</a>
+					<a class="w3-btn w3-red"  href="delete.php?rid=<?php echo $record['rowid']; ?>" data-rid="<?php echo $record['rowid']; ?>">Delete</a>
 				</td>
 			</tr>
 			<?php } ?>
 		</tbody>
 	</table>
 </div>
-<script>
-	function ask(rid=0)
-	{
-		value = confirm("Are you sure to delete this record?");
-		return value;
-	}
-
-	/**
-	 * Attach on-delete
-	 */
-	as = document.getElementsByTagName("a");
-	var length = as.length;
-	for(var i=0; i<length; ++i)
-	{
-		if(as[i].href.match(/delete/g))
-		{
-			as[i].onclick = ask;
-		}
-	}
-</script>
+<script type="text/javascript" src="js/list.js"></script>
 </body>
 </html>
